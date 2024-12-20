@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div id="TopbarMenu">
+            <a href="#">Sākums</a>
+            <a href="#">Par mums</a>
+            <a href="#">Kontakti</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Meklēt">
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url(Resources/Resource1.jpg); background-repeat: no-repeat; background-size: 100%; background-position: 50%;">
+            <div class="hero-content" style="padding: 60px;">
+                <h1 id="HeadingMain">Galvenais virsraksts</h1>
+                <p id="TextMain">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam risus augue, consectetur vitae semper et, sodales eget arcu.</p>
+                <button class="btn-yellow">Lasīt vairāk</button>
+                <button class="btn-blue">Pieteikties</button>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="news-item">
+                <img src="Resources/Resource2.jpg" alt="Ziņas bilde">
+                <p id="NewsText"n style="padding-left: 75px; width: 60%;">Kaut kāds ziņas virsraksts, kurš var būt garš, vai īss</p>
+                <a id="Redirect" href="#" style="left: -80px;">Lasīt vairāk</a>
+            </div>
+            <div class="news-item">
+                <img src="Resources/Resource3.jpg" alt="Ziņas bilde">
+                <p id="NewsText">Kaut kāds ziņas virsraksts</p>
+                <a id="Redirect" href="#">Lasīt vairāk</a>
+            </div>
+            <div class="news-item">
+                <img src="Resources/Resource4.jpg" alt="Ziņas bilde">
+                <p id="NewsText">Kaut kāds ziņas virsraksts</p>
+                <a id="Redirect" href="#">Lasīt vairāk</a>
+            </div>
+        </section>
+
+        <section class="ad-section">
+            <h2>Reklāmas virsraksts</h2>
+            <button class="btn-yellow">Pirkt</button>
+            <button class="btn-red">Izmēģināt</button>
+        </section>
+
+        <section class="carousel">
+            <div class="carousel-image" style="position: relative;">
+                <button class="carousel-btn left" style="position: absolute; top: 50%; z-index: 10; left: 0;"><img class="arrows" src="Resources/arrowLeft.svg"></button>
+                <img src="Resources/Resource5.jpg" alt="Bilde pa visu" style="width: 100%; position: relative;">
+                <button class="carousel-btn right" style="position: absolute; top: 50%; z-index: 10; right: 0;"><img class="arrows" src="Resources/arrowRight.svg"></button>
+            </div>
+            <div class="carousel-dots" style="position: relative; margin-top: -50px;">
+                <span class="dot"></span>
+                <span class="selectedDot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <section class="content">
+            <h3>Heading</h3>
+            <p style="padding-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul style="padding-left: 40px;">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Aliquam risus</li>
+                <li>Lorem ipsum dolor sit amet, consectetur</li>
+            </ul>
+            <table>
+                <tr>
+                    <td>Value 1</td>
+                    <td>Value 2</td>
+                    <td>Value 3</td>
+                </tr>
+                <tr>
+                    <td>Value 4</td>
+                    <td>Value 5</td>
+                    <td>Value 6</td>
+                </tr>
+                <tr>
+                    <td>Value 7</td>
+                    <td>Value 8</td>
+                    <td>Value 9</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-top">
+            <p class="footerlogo">Logo</p>
+            <div id="Kontakti">
+                <p><strong>Kontakti:</strong></p>
+                <p>E-pasts: serzants.janis@gmail.com</p>
+                <p>Tel: +371 1234567</p>
+            </div>
+            <div id="Menu">
+                <p><strong>Izvēlne</strong></p>
+                <a href="index.html">Sākums</a>
+                <a href="index.html">Par mums</a>
+                <a href="index.html">Kontakti</a>
+            </div>
+        </div>
+    </footer>
+    <footer id="footer2">
+        <div id="footer-bottom">
+            <p>Autors: Jānis Seržants</p>
+        </div>
+    </footer>
+</body>
+</html>

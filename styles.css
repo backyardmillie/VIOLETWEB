@@ -1,0 +1,284 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h3{
+    font-size: 50px;
+}
+
+p{
+    font-size: 25px;
+}
+
+li{
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+
+header .logo {
+    font-weight: bold;
+}
+
+#TopbarMenu{
+    position: relative;
+    float: right;
+    margin-right: -74%;
+    display: flex;
+    flex-direction: row;
+}
+
+header #TopbarMenu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+header .search {
+    display: flex;
+}
+
+header .search input {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+header .search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero {
+    display: flex;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content .btn-yellow {
+    background-color: #ffe4a1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.hero-content .btn-blue {
+    background-color: #d6e4fc;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.news {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.news-item {
+    text-align: center;
+    margin: 20px;
+}
+
+.news-item img {
+    width: 500px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: fill;
+}
+
+.ad-section {
+    text-align: center;
+    background-color: #e7f4e4;
+    padding: 100px;
+    font-size: xx-large;
+}
+
+.ad-section .btn-yellow {
+    background-color: #ffe4a1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+.ad-section .btn-red {
+    background-color: #f9c1c1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+.carousel-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 5%;
+}
+
+.arrows{
+    width: 100%;
+    height: 100%;
+    color: #ccc;
+}
+
+.carousel-dots {
+    text-align: center;
+}
+
+.carousel-dots .dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: solid #cacaca;
+    background-color: #ffffff00;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.carousel-dots .selectedDot{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: solid #cacaca;
+    background-color: #ffffff;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.content table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.nav{
+    position: relative;
+    float: right;
+}
+
+table{
+    border: solid #cacaca;
+}
+
+
+#Redirect{
+    position: relative;
+    float: right;
+}
+
+#NewsText{
+    text-align: left;
+}
+
+#TextMain{
+    width: 400px;
+    color: #ffffff;
+}
+
+#HeadingMain{
+    color: #ffffff;
+}
+
+footer {
+    background-color: #ffe9c6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+#footer2 {
+    background-color: #f9c1c1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+#Kontakti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+#Menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+#footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+#footer-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}
