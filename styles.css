@@ -146,7 +146,15 @@ header .search button {
     font-size: xx-large;
 }
 
-.carousel-btn {
+.carousel {
+    width: 100%;
+}
+
+.carousel-image {
+    display: none;
+}
+
+.carousel-btn-l, .carousel-btn-r {
     background: none;
     border: none;
     cursor: pointer;
@@ -173,7 +181,7 @@ header .search button {
     border-radius: 50%;
 }
 
-.carousel-dots .selectedDot{
+.carousel-dots #selectedDot{
     display: inline-block;
     width: 30px;
     height: 30px;

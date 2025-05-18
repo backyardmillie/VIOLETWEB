@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wireframe Layout</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- <script src="/js/main.js"></script> -->
 </head>
 <body>
     <header>
@@ -33,7 +34,7 @@
         <section class="news">
             <div class="news-item">
                 <img src="Resources/Resource2.jpg" alt="Ziņas bilde">
-                <p id="NewsText"n style="padding-left: 75px; width: 60%;">Kaut kāds ziņas virsraksts, kurš var būt garš, vai īss</p>
+                <p id="NewsText" style="padding-left: 75px; width: 60%;">Kaut kāds ziņas virsraksts, kurš var būt garš, vai īss</p>
                 <a id="Redirect" href="#" style="left: -80px;">Lasīt vairāk</a>
             </div>
             <div class="news-item">
@@ -54,16 +55,22 @@
             <button class="btn-red">Izmēģināt</button>
         </section>
 
-        <section class="carousel">
-            <div class="carousel-image" style="position: relative;">
-                <button class="carousel-btn left" style="position: absolute; top: 50%; z-index: 10; left: 0;"><img class="arrows" src="Resources/arrowLeft.svg"></button>
+        <section class="carousel" style="text-align: center;">
+            <button class="carousel-btn-l" onclick="incrementImg(-1)" style="position: absolute; z-index: 10; left: 0; padding-top: 22%;"><img class="arrows" src="Resources/arrowLeft.svg"></button>
+            <button class="carousel-btn-r" onclick="incrementImg(1)" style="position: absolute; z-index: 10; right: 0; padding-top: 22%;"><img class="arrows" src="Resources/arrowRight.svg"></button>
+            <div class="carousel-image">
+                <img src="Resources/Resource6.jpg" alt="Bilde pa visu" style="width: 100%; position: relative;">
+            </div>
+            <div class="carousel-image">
                 <img src="Resources/Resource5.jpg" alt="Bilde pa visu" style="width: 100%; position: relative;">
-                <button class="carousel-btn right" style="position: absolute; top: 50%; z-index: 10; right: 0;"><img class="arrows" src="Resources/arrowRight.svg"></button>
+            </div>
+            <div class="carousel-image">
+                <img src="Resources/Resource6.jpg" alt="Bilde pa visu" style="width: 100%; position: relative;">
             </div>
             <div class="carousel-dots" style="position: relative; margin-top: -50px;">
-                <span class="dot"></span>
-                <span class="selectedDot"></span>
-                <span class="dot"></span>
+                <span class="dot" id="selectedDot"></span>
+                <span class="dot" id=""></span>
+                <span class="dot" id=""></span>
             </div>
         </section>
 
@@ -116,5 +123,33 @@
             <p>Autors: Jānis Seržants</p>
         </div>
     </footer>
+    <script>
+    let imgIndex = 1;
+    showImg(imgIndex);
+
+    function incrementImg(n) {
+        showImg(imgIndex += n);
+    }
+
+    function currentImg(n) {
+        showImg(imgIndex = n);
+    }
+
+    function showImg(n) {
+        let i;
+        let imgs = document.getElementsByClassName("carousel-image");
+        let dots = document.getElementsByClassName("dot");
+        if (n > imgs.length) {imgIndex = 1}
+        if (n < 1) {imgIndex = imgs.length}
+        for (i = 0; i < imgs.length; i++) {
+            imgs[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].id = "";
+        }
+        imgs[imgIndex-1].style.display = "block";
+        dots[imgIndex-1].id += "selectedDot";
+    }
+    </script>
 </body>
 </html>
